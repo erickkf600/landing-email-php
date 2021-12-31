@@ -1,0 +1,49 @@
+#navegacao 
+  @include transition( all 0.8s ease 0s)
+  background: rgba(0,0,0,.4)
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+  padding: 18px 0  
+  @include celular
+    background: rgba(0,0,0,.85)  
+  .logo
+    margin-top: -15px  
+    padding: 0 
+    img
+      @extend %t-3s
+      @include celular-md
+        width:90%
+
+#nav
+  li
+    a 
+      @extend %color-branco
+      font-size: 15px
+      text-transform: uppercase
+      @extend %t-3s
+      &:hover
+        @extend %color-azul 
+      @include celular
+        text-align: center
+        padding: 15px 0 15px 0 
+        border-bottom: 1px solid #303030
+
+#navegacao.header-animada
+  padding: 0
+  background: rgba(0,0,0,.9)
+  z-index: 9999
+  @include transition(all .6s)
+  .logo
+    margin-top: -5px
+    @include celular-md
+      margin-top: -10px
+      img
+         width:80% 
+
+
+
+
+        
+  
+
+      
+

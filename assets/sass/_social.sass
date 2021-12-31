@@ -1,0 +1,41 @@
+.parallax
+  background-image: url(../img/parallax2.jpg)
+  padding: 0	 
+  background-attachment: fixed
+  background-position: center top
+  background-repeat: no-repeat
+  background-size: cover
+  @extend %color-branco
+  .overlay
+    @extend %overlay
+  .titulo
+    text-shadow: 2px 2px #000
+    h2
+      font-size: 50px
+      text-transform: uppercase  
+
+.social-button
+  margin: 0 auto
+  padding: 0
+  list-style: none
+  text-align: center
+  li
+    display: inline-block
+    margin: 0 50px 0 50px
+    a
+      border: 3px solid #fff  
+      border-radius: 50%
+      color: #fff
+      display: block
+      height: 90px
+      line-height: 105px
+      width: 90px
+      @extend %t-3s
+      &:hover
+        color: #008ECC
+        border-color: #008ECC
+      i
+        font-size: 4rem 
+
+
+
